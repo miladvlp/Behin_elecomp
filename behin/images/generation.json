@@ -1,0 +1,47 @@
+{
+  "generator": "Built-in image_gen",
+  "palette": "Pale cool gray #F3F4F5, ivory ceramic, midnight navy #0D2948, clear glass, restrained amber #F59A16",
+  "common_prompt": "Premium editorial realistic 3D sculptural still life for a Persian enterprise technology website. Seamless very pale cool-gray studio background. Matte ivory ceramic, midnight navy enamel, clear optical glass and a small amber accent. Refined softbox lighting and delicate contact shadows. Centered with generous safe margins. No text, letters, numerals, logos, watermark, UI, people, robots or humanoid faces.",
+  "assets": [
+    {
+      "file": "behin/images/platform.webp",
+      "subject": "A central navy ceramic cube and ivory modules in a precise 3D grid connected by glass bridges; one amber connector. Unified organizational platform. Portrait 2:3."
+    },
+    {
+      "file": "behin/images/ocr.webp",
+      "subject": "Blank ivory paper sheets passing through a clear glass scanning portal; thin navy scanning plane and neatly aligned amber/navy data blocks. Intelligent OCR. Portrait 2:3."
+    },
+    {
+      "file": "behin/images/agent.webp",
+      "subject": "A translucent glass sphere with a navy core connected to four ivory task blocks; one amber central element. Organizational assistant coordinating tasks. Portrait 2:3."
+    },
+    {
+      "file": "behin/images/workflow.webp",
+      "subject": "Five ivory stepped platforms joined by thin glass bridges, a navy cube progressing toward an amber node. Connected workflows. Portrait 2:3."
+    },
+    {
+      "file": "behin/images/insights.webp",
+      "subject": "Three translucent glass panels with pure navy geometric inset shapes, a curved arc and one amber sphere. Clear insight, without printed data or conventional chart clip art. Portrait 2:3."
+    },
+    {
+      "file": "behin/images/knowledge.webp",
+      "subject": "Orderly blank ivory document slabs beside a circular navy archive ring; blue ceramic data blocks arranged in a neat grid and one amber block. Organizational knowledge. Portrait 2:3."
+    },
+    {
+      "file": "behin/images/wide.webp",
+      "subject": "An architectural model of an interconnected organization: central navy module and five ivory modules, clear glass walkways, one amber connector. Elevated three-quarter camera. Wide 16:10, central 65 percent composition, ample margins."
+    }
+  ],
+  "font": {
+    "family": "Estedad",
+    "weights": [
+      300,
+      400,
+      500,
+      600
+    ],
+    "license": "OFL-1.1",
+    "source": "https://github.com/aminabedi68/Estedad",
+    "license_file": "fonts/Estedad-OFL.txt"
+  }
+}

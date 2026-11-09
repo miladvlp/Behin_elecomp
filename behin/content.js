@@ -21,7 +21,7 @@
           const name = a.closest('.pricing__plan').querySelector('.pricing__name')?.textContent.trim();
           next = subject(`گفت‌وگو دربارهٔ ${name}`);
         } else if (a.classList.contains('app-nav__signin') || href.includes('signin')) next = '/#about';
-        else if (a.closest('.library') || a.textContent.includes('دیدن راهکارها')) next = '/#how-it-works';
+        else if (a.closest('.library') || a.textContent.includes('آشنایی با راهکارها')) next = '/#how-it-works';
         else next = subject('درخواست جلسه در نمایشگاه اتوکام ۱۴۰۵');
       } else if (href.includes('support@premotio.com')) next = `mailto:${email}`;
       else if (/twitter\.com|x\.com/.test(href)) next = 'tel:+983136619383';
