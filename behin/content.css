@@ -1,5 +1,5 @@
 /* Persian text support. Original layout, colors, breakpoints and motion remain in _nuxt. */
-@font-face{font-family:Behin;src:url('/fonts/Vazirmatn-Variable.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:Behin;src:url('../fonts/Vazirmatn-Variable.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
 html:lang(fa){--font-sans:Behin,'Inter Tight',Tahoma,sans-serif}
 html:lang(fa) body{font-family:var(--font-sans)}
 html:lang(fa) :is(h1,h2,h3,p,.customization__copy,.pricing__features,.app-button__label,.app-link__text,.app-menu__link,.agents__prompt,.agents__reply,.agents__placeholder,.agents__label,.pricing__name,.pricing__claim,.pricing__note,.app-footer__small,.app-footer__hint){direction:rtl;letter-spacing:0}
