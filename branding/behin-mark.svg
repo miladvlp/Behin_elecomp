@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Behin">
+<defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1470b7"/><stop offset="1" stop-color="#093a72"/></linearGradient><linearGradient id="o" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffb238"/><stop offset="1" stop-color="#ef7900"/></linearGradient></defs>
+<path fill="url(#b)" d="M12 6h10v52H12zM22 6h15c13 0 20 7 20 16 0 7-4 11-9 13 7 3 10 6 10 12 0 7-6 11-14 11H22V46h17c4 0 7-2 7-6 0-3-3-5-7-5H22V25h13c5 0 8-2 8-5s-3-5-8-5H22z"/>
+<path fill="url(#o)" d="M38 5c12 0 19 6 19 16 0 6-4 11-10 14 8 2 12 6 12 12 0 8-7 13-18 13h-9V49h9c5 0 7-2 7-5s-2-5-7-5h-7V28h5c5 0 7-2 7-6 0-3-3-5-8-5z"/>
+</svg>
