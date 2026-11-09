@@ -1,0 +1,1 @@
+import{I as e,_ as t,f as n,y as r}from"./BkCpsaxO.js";import{bn as i}from"./CeRC1V7Q.js";import{A as a,a as o,k as s,t as c}from"#entry";var l=r({__name:`[...missing]`,setup(r){let l=a();return l&&s(l,404),i({title:`Page not found — premotio`,robots:`noindex`}),(r,i)=>{let a=o,s=c;return e(),n(`main`,null,[t(a,{status:404}),t(s)])}}});export{l as default};
