@@ -33,7 +33,7 @@
     }
   ],
   "font": {
-    "family": "Estedad",
+    "family": "Vazirmatn",
     "weights": [
       300,
       400,
@@ -41,7 +41,7 @@
       600
     ],
     "license": "OFL-1.1",
-    "source": "https://github.com/aminabedi68/Estedad",
-    "license_file": "fonts/Estedad-OFL.txt"
+    "source": "https://github.com/rastikerdar/vazirmatn",
+    "license_file": "fonts/Vazirmatn-OFL.txt"
   }
 }

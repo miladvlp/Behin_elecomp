@@ -1,9 +1,6 @@
+@font-face{font-family:Vazirmatn;src:url('../fonts/Vazirmatn-Variable.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
 /* Persian typography layered on the retained Premotio layout and motion. */
-@font-face{font-family:Estedad;src:url('../fonts/Estedad-Light.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap}
-@font-face{font-family:Estedad;src:url('../fonts/Estedad-Regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:Estedad;src:url('../fonts/Estedad-Medium.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
-@font-face{font-family:Estedad;src:url('../fonts/Estedad-SemiBold.woff2') format('woff2');font-weight:600;font-style:normal;font-display:swap}
-html:lang(fa){--font-sans:Estedad,'Inter Tight',Tahoma,sans-serif;--font-size-h1:5.25rem;--font-size-tablet-h1:4.25rem;--font-size-mobile-h1:2.8rem;--leading-h1:1.38;--leading-h2:1.5;--leading-label:1.7;font-synthesis:none}
+html:lang(fa){--font-sans:Vazirmatn,'Inter Tight',Tahoma,sans-serif;--font-size-h1:5.25rem;--font-size-tablet-h1:4.25rem;--font-size-mobile-h1:2.8rem;--leading-h1:1.38;--leading-h2:1.5;--leading-label:1.7;font-synthesis:none}
 html:lang(fa) body{font-family:var(--font-sans);font-weight:400}
 html:lang(fa) :is(h1,h2,h3,p,.customization__copy,.pricing__features,.app-button__label,.app-link__text,.app-menu__link,.agents__prompt,.agents__reply,.agents__placeholder,.agents__label,.pricing__name,.pricing__claim,.pricing__note,.app-footer__small,.app-footer__hint){direction:rtl;letter-spacing:0}
 html:lang(fa) :is(h1,h2){font-weight:300;line-height:1.4;letter-spacing:-.035em}
@@ -27,7 +24,7 @@ html:lang(fa) .agents__text{font-size:1rem;line-height:1.95}
 html:lang(fa) .pricing__title{max-width:18ch;font-size:clamp(2.6rem,4.7vw,4.6rem);line-height:1.65}
 html:lang(fa) .pricing__lead{font-size:1rem;line-height:1.9;max-width:40ch}
 html:lang(fa) .pricing__claim{font-size:1.7rem;font-weight:500;line-height:1.8}
-html:lang(fa) .pricing__type{font-family:'Inter Tight',Arial,sans-serif;font-size:5rem;font-weight:400;line-height:1.2;letter-spacing:-.035em;direction:ltr;unicode-bidi:isolate}
+html:lang(fa) .pricing__type{font-family:Vazirmatn,'Inter Tight',Arial,sans-serif;font-size:5rem;font-weight:400;line-height:1.2;letter-spacing:-.035em;direction:ltr;unicode-bidi:isolate}
 html:lang(fa) .pricing__amount{direction:ltr;min-height:6rem}
 html:lang(fa) .pricing__note{font-size:.85rem;line-height:1.9;font-weight:400}
 html:lang(fa) .pricing__feature{font-size:.93rem}
