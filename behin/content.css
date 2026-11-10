@@ -1,41 +1,208 @@
-@font-face{font-family:Vazirmatn;src:url('../fonts/Vazirmatn-Variable.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
-/* Persian typography layered on the retained Premotio layout and motion. */
-html:lang(fa){--font-sans:Vazirmatn,'Inter Tight',Tahoma,sans-serif;--font-size-h1:5.25rem;--font-size-tablet-h1:4.25rem;--font-size-mobile-h1:2.8rem;--leading-h1:1.38;--leading-h2:1.5;--leading-label:1.7;font-synthesis:none}
-html:lang(fa) body{font-family:var(--font-sans);font-weight:400}
-html:lang(fa) :is(h1,h2,h3,p,.customization__copy,.pricing__features,.app-button__label,.app-link__text,.app-menu__link,.agents__prompt,.agents__reply,.agents__placeholder,.agents__label,.pricing__name,.pricing__claim,.pricing__note,.app-footer__small,.app-footer__hint){direction:rtl;letter-spacing:0}
-html:lang(fa) :is(h1,h2){font-weight:300;line-height:1.4;letter-spacing:-.035em}
-html:lang(fa) :is(p,.customization__text,.pricing__feature){font-weight:400;line-height:1.95}
-html:lang(fa) :is(.hero__title-group-1,.hero__title-group-2){direction:rtl;line-height:1.4}
-html:lang(fa) .hero__title-group-1{min-width:4em}
-html:lang(fa) .hero__title-sub-5{display:inline-block;white-space:nowrap;direction:ltr;unicode-bidi:isolate}
-html:lang(fa) .hero__text{font-size:.95rem;line-height:1.9;font-weight:400}
-html:lang(fa) .hero__text-3{direction:rtl;font-size:.78rem;line-height:1.9;font-weight:400}
-html:lang(fa) :is(.app-link__text,.app-button__label){font-weight:500}
-/* Keep Arabic-script words joined inside the original animated link frames. */
-html:lang(fa) .app-link .app-link__text{color:inherit!important;transition:opacity .2s}
-html:lang(fa) .app-link:hover .app-link__text{opacity:.65}
-html:lang(fa) .app-link__lines{display:none}
-html:lang(fa) .text-roll__char{display:inline}
-html:lang(fa) .categories__name{direction:rtl;font-weight:400;letter-spacing:-.025em}
-html:lang(fa) .customization__name{font-weight:500;line-height:1.75}
-html:lang(fa) .customization__text{font-size:.95rem}
-html:lang(fa) .agents__title{font-size:var(--font-size-h1)}
-html:lang(fa) .agents__text{font-size:1rem;line-height:1.95}
-html:lang(fa) .pricing__title{max-width:18ch;font-size:clamp(2.6rem,4.7vw,4.6rem);line-height:1.65}
-html:lang(fa) .pricing__lead{font-size:1rem;line-height:1.9;max-width:40ch}
-html:lang(fa) .pricing__claim{font-size:1.7rem;font-weight:500;line-height:1.8}
-html:lang(fa) .pricing__type{font-family:Vazirmatn,'Inter Tight',Arial,sans-serif;font-size:5rem;font-weight:400;line-height:1.2;letter-spacing:-.035em;direction:ltr;unicode-bidi:isolate}
-html:lang(fa) .pricing__amount{direction:ltr;min-height:6rem}
-html:lang(fa) .pricing__note{font-size:.85rem;line-height:1.9;font-weight:400}
-html:lang(fa) .pricing__feature{font-size:.93rem}
-html:lang(fa) .app-footer__mail{direction:ltr}
-html:lang(fa) .start__title{font-weight:300;line-height:1.5}
-@media(max-width:640px){html:lang(fa) .hero__title-group-1{min-width:0}html:lang(fa) .hero__text{font-size:.875rem}html:lang(fa) .pricing__title{font-size:2.4rem}html:lang(fa) .pricing__claim{font-size:1.5rem}html:lang(fa) .pricing__type{font-size:4.25rem}html:lang(fa) .agents__title{font-size:2.8rem}}
+@font-face {
+  font-family: Vazirmatn;
+  src: url('../fonts/Vazirmatn-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 
-html:lang(fa) :is(.hero__title,.library__title,.shortcut__title,.customization__more,.distortion__title,.agents__title,.devices__title,.export__title,.start__title,.pricing__title){font-weight:300;line-height:1.4}
-html:lang(fa) :is(.hero__text,.library__copy-1,.library__copy-2,.agents__text,.devices__text,.export__text,.start__text){font-size:clamp(15px,1.1rem,18px);font-weight:400;line-height:1.95}
-html:lang(fa) .hero__text-3{font-size:clamp(12px,.85rem,14px);line-height:1.9}
-html:lang(fa) .customization__text{font-size:clamp(14px,1rem,17px)}
-html:lang(fa) .pricing__feature{font-size:clamp(14px,1rem,17px)}
+/* Persian type roles. Retain the existing scenes, surfaces and motion. */
+html:lang(fa) {
+  --font-sans: Vazirmatn, 'Inter Tight', Tahoma, sans-serif;
+  --behin-type-display: clamp(3rem, 4.5vw, 4.5rem);
+  --behin-type-heading: clamp(2.25rem, 3.7vw, 3.5rem);
+  --behin-type-title: clamp(1.375rem, 2vw, 1.75rem);
+  --behin-type-body: max(16px, 1.0625rem);
+  --behin-type-label: .9375rem;
+  --behin-type-caption: .8125rem;
+  --font-size-h1: var(--behin-type-display);
+  --font-size-tablet-h1: 3.5rem;
+  --font-size-mobile-h1: clamp(2rem, 8.4vw, 2.75rem);
+  --font-size-h2: var(--behin-type-heading);
+  --font-size-tablet-h2: 2.75rem;
+  --font-size-mobile-h2: 2rem;
+  --font-size-h3: var(--behin-type-title);
+  --font-size-tablet-h3: 1.5rem;
+  --font-size-mobile-h3: 1.375rem;
+  --leading-h1: 1.4;
+  --leading-paragraph: 1.8;
+  --leading-label: 1.6;
+  font-synthesis: none;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+html:lang(fa) body { font-family: var(--font-sans); font-weight: 400; }
+html:lang(fa) :is(h1,h2,h3,p,.customization__copy,.pricing__features,.app-button__label,.app-link__text,.app-menu__link,.agents__prompt,.agents__reply,.agents__placeholder,.agents__label,.pricing__name,.pricing__claim,.pricing__note,.app-footer__small,.app-footer__hint) {
+  direction: rtl;
+  letter-spacing: 0;
+}
+html:lang(fa) :is(h1,h2,h3) { font-weight: 600; line-height: 1.45; letter-spacing: 0; }
+html:lang(fa) :is(p,.customization__text,.pricing__feature) { font-weight: 400; line-height: 1.8; }
+html:lang(fa) :is(.hero__text,.library__copy-1,.library__copy-2,.agents__text,.devices__text,.export__text,.start__text) {
+  font-size: var(--behin-type-body);
+  line-height: 1.85;
+  font-weight: 400;
+}
+html:lang(fa) :is(.library__title,.agents__title,.devices__title,.export__title,.pricing__title) {
+  font-size: var(--behin-type-heading);
+  line-height: 1.5;
+  font-weight: 600;
+}
 
-html:lang(fa) .agents__title{font-size:clamp(2.75rem,5.3vw,4.8rem)}
+/* Keep complete phrases together instead of translating Latin min-content widths. */
+html:lang(fa) .hero__title { gap: 2rem; align-items: flex-start; font-weight: 500; }
+html:lang(fa) :is(.hero__title-group-1,.hero__title-group-2) {
+  width: auto;
+  min-width: 0;
+  max-width: 100%;
+  direction: rtl;
+  line-height: 1.4;
+}
+html:lang(fa) .hero__title-sub-5 { display: inline; white-space: nowrap; direction: rtl; }
+html:lang(fa) :is(.hero__marquee,.start__marquee) { display: inline; clip-path: none; }
+html:lang(fa) :is(.hero__marquee-track,.start__marquee-track) {
+  position: static;
+  display: inline;
+  white-space: normal;
+  animation: none;
+  transform: none;
+  will-change: auto;
+}
+html:lang(fa) :is(.hero__marquee-size,.hero__marquee-copy,.start__marquee-size,.start__marquee-copy) { display: none; }
+html:lang(fa) :is(.hero__marquee-word,.start__marquee-word) { padding: 0; }
+html:lang(fa) .hero__title-sub-5 > [aria-hidden],
+html:lang(fa) .start__bracket > [aria-hidden],
+html:lang(fa) .start__bracket > span:not(.start__marquee):has(> [aria-hidden]) { display: none; }
+html:lang(fa) .start__bracket { white-space: nowrap; }
+html:lang(fa) .hero__texts {
+  direction: rtl;
+  align-self: flex-end;
+  align-items: stretch;
+  width: min(30rem, 100%);
+  gap: 1rem;
+}
+html:lang(fa) :is(.hero__text-1,.hero__text-2,.hero__text-3) { max-width: 100%; margin: 0; text-align: right; }
+html:lang(fa) .hero__text-2 { font-size: var(--behin-type-label); line-height: 1.9; }
+html:lang(fa) .hero__text-3 { font-size: var(--behin-type-caption); font-weight: 500; line-height: 1.8; }
+
+/* One reading edge for the heading, supporting copy and its action. */
+html:lang(fa) .library__text { direction: rtl; align-items: stretch; gap: 2rem; }
+html:lang(fa) .library__heading { width: 100%; gap: 1.5rem; }
+html:lang(fa) .library__title { width: 100%; max-width: none; }
+html:lang(fa) .library__copy { direction: rtl; align-items: stretch; gap: .75rem; }
+html:lang(fa) :is(.library__copy-1,.library__copy-2) { width: 100%; max-width: 28rem; margin: 0; }
+html:lang(fa) .library__action { align-self: flex-start; }
+html:lang(fa) .categories__name { direction: rtl; font-weight: 500; letter-spacing: 0; line-height: 1.5; }
+html:lang(fa) .shortcut__title { font-weight: 500; line-height: 1.5; }
+html:lang(fa) .customization__pick { direction: rtl; text-align: right; }
+html:lang(fa) .customization__copy { width: 19rem; }
+html:lang(fa) .customization__name { font-weight: 600; line-height: 1.6; }
+html:lang(fa) .customization__text { font-size: max(16px, 1rem); line-height: 1.85; }
+html:lang(fa) .customization__more { font-size: clamp(1.75rem, 2.8vw, 2.5rem); line-height: 1.6; font-weight: 500; }
+html:lang(fa) .customization__line--in { margin-left: 0; margin-inline-start: 1em; }
+html:lang(fa) .distortion__title { font-weight: 500; line-height: 1.4; }
+
+html:lang(fa) :is(.agents__title,.devices__title) { top: 6.5rem; max-width: calc(100% - 2 * var(--layout-margin)); }
+html:lang(fa) .agents__title { width: 42rem; }
+/* SplitText can leave an empty line around the hidden decorative arrow. */
+html:lang(fa) .agents__title .reveal-line:has(> .agents__title-arrow):not(:has(> .reveal-word)) { display: none !important; }
+html:lang(fa) :is(.devices__title,.export__title) > span[aria-hidden] { display: none; }
+html:lang(fa) :is(.devices__title,.export__title) .reveal-line:has(> span[aria-hidden]:only-child) { display: none !important; }
+html:lang(fa) :is(.agents__text--first,.agents__text--second) { width: 22rem; right: var(--layout-margin); left: auto; text-align: right; }
+html:lang(fa) .agents__text--first { top: 16rem; }
+html:lang(fa) .agents__text--second { top: 20.5rem; }
+html:lang(fa) .agents__label { font-size: var(--behin-type-caption); font-weight: 500; }
+html:lang(fa) :is(.agents__prompt,.agents__reply,.agents__placeholder) { font-size: var(--behin-type-label); line-height: 1.8; }
+html:lang(fa) .devices__copy { width: 22rem; max-width: calc(100% - 2 * var(--layout-margin)); gap: .75rem; }
+html:lang(fa) .export__words { gap: 2rem; }
+html:lang(fa) .export__copy { direction: rtl; gap: 1.5rem; }
+
+html:lang(fa) .pricing { gap: 2.5rem; padding-top: 7rem; }
+html:lang(fa) .pricing__heading { gap: 1.5rem; }
+html:lang(fa) .pricing__title { max-width: 22ch; text-wrap: balance; }
+html:lang(fa) .pricing__lead { width: min(36rem, 100%); font-size: var(--behin-type-body); line-height: 1.85; }
+html:lang(fa) .pricing__plans { direction: rtl; }
+html:lang(fa) .pricing__plan { direction: rtl; padding: 2rem; gap: 2rem; }
+html:lang(fa) .pricing__body { gap: 1.5rem; }
+html:lang(fa) .pricing__top { gap: .75rem; }
+html:lang(fa) .pricing__name { font-size: 1rem; font-weight: 600; }
+html:lang(fa) .pricing__claim { font-size: 1.5rem; font-weight: 500; line-height: 1.65; min-height: 3.3em; text-wrap: balance; }
+html:lang(fa) .pricing__amount { direction: ltr; justify-content: flex-end; min-height: 4.5rem; }
+html:lang(fa) .pricing__type { font-family: 'Inter Tight', Vazirmatn, sans-serif; font-size: 3.5rem; font-weight: 500; line-height: 1.2; letter-spacing: -.02em; direction: ltr; unicode-bidi: isolate; }
+html:lang(fa) .pricing__note { font-size: var(--behin-type-label); font-weight: 400; line-height: 1.8; }
+html:lang(fa) .pricing__feature { height: auto; min-height: 3rem; padding-block: .625rem; font-size: max(16px, 1rem); font-weight: 400; line-height: 1.8; }
+html:lang(fa) .pricing__fine { font-size: var(--behin-type-caption); line-height: 1.85; }
+html:lang(fa) .pricing__action { align-self: stretch; }
+html:lang(fa) .start__title { font-size: var(--behin-type-display); font-weight: 600; line-height: 1.5; width: min(54rem, 100%); text-wrap: balance; }
+html:lang(fa) .start__text { width: min(34rem, 100%); }
+html:lang(fa) .start__words { gap: 1.5rem; }
+html:lang(fa) .app-footer__mail { direction: ltr; }
+html:lang(fa) :is(.app-footer__small,.app-footer__hint) { font-size: var(--behin-type-caption); line-height: 1.8; }
+
+/* Keep Arabic-script words joined within the original link and button frames. */
+html:lang(fa) :is(.app-link__text,.app-button__label) { font-weight: 500; letter-spacing: 0; }
+html:lang(fa) .app-link .app-link__text { color: inherit !important; transition: opacity .2s; }
+html:lang(fa) .app-link:hover .app-link__text { opacity: .65; }
+html:lang(fa) .app-link__lines { display: none; }
+html:lang(fa) .text-roll__char { display: inline; }
+html:lang(fa) :is(.app-nav__link,.app-nav__sign-in) { font-size: var(--behin-type-label); font-weight: 500; }
+html:lang(fa) :is(.app-button,.app-menu__link,.app-nav__link,.app-nav__sign-in) { min-height: 2.75rem; }
+html:lang(fa) :is(a,button):focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+
+@media (max-width: 1024px) {
+  html:lang(fa) { --behin-type-display: 3.5rem; --behin-type-heading: 2.75rem; }
+  html:lang(fa) .hero__title { gap: .5rem; }
+  html:lang(fa) .hero__title-group-2 { align-self: flex-start; }
+  html:lang(fa) .hero__texts { width: min(28rem, 100%); }
+  html:lang(fa) .pricing__claim { min-height: 0; }
+  html:lang(fa) .pricing__plan { gap: 2rem; }
+  html:lang(fa) .pricing__type { font-size: 3rem; }
+}
+@media (max-width: 640px) {
+  html:lang(fa) { --behin-type-display: clamp(2rem, 8.4vw, 2.75rem); --behin-type-heading: clamp(1.875rem, 7.5vw, 2.5rem); --behin-type-body: max(16px, 1rem); }
+  html:lang(fa) .hero__container { padding-top: 6.5rem; padding-bottom: 2rem; }
+  html:lang(fa) .hero__title { gap: .25rem; }
+  html:lang(fa) .hero__texts { width: 100%; gap: .75rem; }
+  html:lang(fa) .hero__text-2 { font-size: .875rem; }
+  html:lang(fa) .library__text { gap: 1.5rem; }
+  html:lang(fa) .library__heading { gap: 1rem; }
+  html:lang(fa) :is(.library__copy-1,.library__copy-2) { max-width: 100%; }
+  html:lang(fa) .customization__copy { width: 100%; }
+  html:lang(fa) .customization__more { font-size: 1.75rem; }
+  html:lang(fa) :is(.agents__title,.devices__title) { top: 6rem; }
+  html:lang(fa) .agents__title { width: calc(100% - 2 * var(--layout-margin)); }
+  html:lang(fa) :is(.agents__text--first,.agents__text--second) { right: var(--layout-margin); left: auto; width: calc(100% - 2 * var(--layout-margin)); }
+  html:lang(fa) .agents__text--first { top: 14.5rem; }
+  html:lang(fa) .agents__text--second { top: 17.5rem; }
+  html:lang(fa) .devices__copy { width: auto; }
+  html:lang(fa) .export__words { gap: 16.75rem; padding-top: 6rem; }
+  html:lang(fa) .export__copy { gap: .75rem; }
+  html:lang(fa) .pricing__plan { padding: 1.5rem; }
+  html:lang(fa) .pricing__claim { font-size: 1.375rem; }
+  html:lang(fa) .pricing__amount { min-height: 4rem; }
+  html:lang(fa) .start__title { font-size: var(--behin-type-heading); }
+  html:lang(fa) .start__actions { gap: .75rem; flex-wrap: wrap; justify-content: center; }
+}
+@media (max-height: 600px) and (min-width: 641px) {
+  html:lang(fa) { --behin-type-display: 2.75rem; --behin-type-heading: 2.25rem; --font-size-tablet-h1: 2rem; }
+  html:lang(fa) .hero__container { padding-top: 5.5rem; padding-bottom: 1rem; gap: 1rem; }
+  html:lang(fa) :is(.agents__title,.devices__title) { top: 5.5rem; }
+  html:lang(fa) .hero__text-3 { display: none; }
+  html:lang(fa) .agents__text--first { top: 12.5rem; }
+  html:lang(fa) .agents__text--second { top: 16.75rem; }
+}
+
+@media (max-width: 640px) and (orientation: portrait) {
+  html:lang(fa) .agents__frame {
+    --behin-panel-height: min(calc(var(--wide) * 698 / 755), max(8rem, 100svh - 31rem));
+    --chat-top: calc(20rem + var(--behin-panel-height) + 1rem);
+  }
+  html:lang(fa) .agents__panel {
+    top: 20rem;
+    width: calc(var(--behin-panel-height) * 755 / 698);
+    max-width: calc(100% - 2 * var(--layout-margin));
+    left: var(--layout-margin);
+    right: var(--layout-margin);
+    margin-inline: auto;
+  }
+}
